@@ -96,6 +96,7 @@ var generatePassword5 = function() {
 
 var password = document.getElementById("password");
 function writePassword() {
+  
 var password = "";
 for (var i = 0; i < passwordLength; i++){
   if (passwordLowercase){
@@ -114,12 +115,11 @@ var randomNumber = Math.floor(Math.random() * lower.length);
     var randomNumber = Math.floor(Math.random() * special.length);
     password += special.substring(randomNumber, randomNumber +1);
   }
-  
-document.getElementById("password").value = password;
+ const finalPassword = password.slice(0, passwordLength);
+ 
+document.getElementById("password").value = finalPassword;
 }
 }
-
-
 
 
 // // Get references to the #generate element
