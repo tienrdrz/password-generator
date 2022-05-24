@@ -67,13 +67,31 @@ var generatePassword5 = function() {
   window.passwordSpecial = window.confirm("Would you like to include special characters?")
   if (passwordSpecial) {
     window.alert("Your password will have special characters.")
+    writePassword();
   }
   else {
     window.alert("Your password will not have special characters.")
+    writePassword();
   }
 }
 
-
+var password = document.getElementById("password");
+function writePassword() {
+  window.alert("hi")
+var lower = "abcdefghijklmnopqrstuvwxyz";
+var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var numeric = "1234567890";
+var special = "!@#$%^&*()";
+var password = "";
+  
+for (var i = 0; i <= passwordLength; i++){
+  if (passwordLowercase){
+var randomNumber = Math.floor(Math.random() * lower.length);
+  password += lower.substring(randomNumber, randomNumber +1);
+  }
+document.getElementById("password").value = password;
+}
+}
 
 
 
