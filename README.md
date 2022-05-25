@@ -10,6 +10,9 @@ I cloned the starting html and css files in order to create the foundation, howe
 
 ** Deployed URL
 
-
+https://tienrdrz.github.io/password-generator/
 
 ** Screenshot of website (with random password generated)
+
+![image](https://user-images.githubusercontent.com/100370557/170368826-d769add1-fd4a-4e29-bcd1-32052c7b4fe6.png)
+
